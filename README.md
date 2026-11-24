@@ -25,3 +25,17 @@ depwatch is built with [GitHub Spec Kit](https://github.com/github/spec-kit). Ev
 
 ## Status
 🚧 In development
+
+## Local setup
+
+```powershell
+uv sync
+uv run alembic upgrade head
+uv run uvicorn app.main:app --reload
+```
+
+Configure runtime values through environment variables:
+
+- `DATABASE_URL`: SQLAlchemy database URL.
+- `MAX_UPLOAD_BYTES`: Maximum requirements upload size.
+- `OSV_TIMEOUT_SECONDS`: Per-request OSV timeout.

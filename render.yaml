@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: depwatch
+    runtime: python
+    buildCommand: uv sync --no-dev
+    startCommand: uv run uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: depwatch-db
+          property: connectionString
+      - key: MAX_UPLOAD_BYTES
+        value: "1048576"
+      - key: OSV_TIMEOUT_SECONDS
+        value: "10"
+
+databases:
+  - name: depwatch-db
+    plan: free
