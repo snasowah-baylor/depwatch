@@ -4,7 +4,7 @@ Sync Impact Report:
 - Added principles: Security First; Test-First; Accuracy Over Speed; Simplicity; Observability
 - Added sections: Security and Dependency Constraints; Development and Delivery Workflow
 - Removed sections: none
-- Deferred placeholders: RATIFICATION_DATE
+- Deferred placeholders: none
 -->
 
 # depwatch Constitution
@@ -66,4 +66,4 @@ or materially expanded guidance, and PATCH for clarification or wording-only cha
 MUST be reviewed for every feature and pull request. Any change to this constitution MUST include
 a short rationale and a corresponding migration or update plan where needed.
 
-**Version**: 1.0.0 | **Ratified**: TODO(RATIFICATION_DATE): set the actual adoption date | **Last Amended**: 2026-11-24
+**Version**: 1.0.0 | **Ratified**: 2026-11-23 | **Last Amended**: 2026-11-24
